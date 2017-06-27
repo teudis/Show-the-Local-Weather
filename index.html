@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="todoApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Show the Local Weather</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+
+      body {
+
+          background-color: burlywood;
+      }
+
+      #icon1{
+
+           padding-left: 35%;
+        }
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="https://rawgit.com/darkskyapp/skycons/master/skycons.js"></script>
+</head>
+<body ng-controller="WeatherController">
+<main class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="text-center">FREE CODE CAMP</h1>
+      </div>
+      <div class="col-md-12 jumbotron">
+            <h2 class="text-center">Local Weather </h2>
+            <h2 class="text-center">Summary: {{ resumen }} </h2>
+            <canvas id="icon1"> </canvas>
+          <br>
+          <h2 class="text-center">Temperature: {{ temperatura }} °F </h2>
+          <h2 class="text-center">Temperature: {{ celcius }} °F </h2>
+      </div>
+    </div>
+</main>
+</body>
+</html>
